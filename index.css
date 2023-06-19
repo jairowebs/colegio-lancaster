@@ -1,0 +1,209 @@
+
+.navbar {
+    padding: 1.5rem;
+       
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+    color: black; 
+    font-weight: bold;
+}
+
+body {
+    background-image: url(imagenes/abstracto.png);
+    background-size: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.carousel-inner {
+    padding: 1.2rem;
+    display: flex;
+    max-width: auto;
+    height: auto;
+
+}
+#titulo{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+
+        }
+h2{
+font-family: 'Cinzel', serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+}
+h5{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+}
+p{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+}
+        
+
+
+#reseñahistorica {
+
+    background-image: url(imagenes/fachada-opaciti.jpg);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: rgb(12, 12, 12);
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 20px; border: 1.5px solid rgba(0, 0, 0, 0.267);
+   
+}
+
+
+
+#inicio-sesion{
+    background-image: url(imagenes/abstracto-tarjetas.jpg); background-size: cover;
+    border-radius: 20px;border: 1.5px solid rgba(0, 0, 0, 0.267);
+}
+.boton1{
+        color:black;
+        background-color: white;
+        border: 1.5px solid rgba(0, 0, 0, 0.479);
+        padding: 0.4rem 1rem;
+        margin: 10px;
+        border-radius: 10px;
+        transition: all 0.2s ease-in-out;
+        justify-content: right;
+        text-align: right;
+}
+.boton1:hover{
+    background-color:rgb(103, 88, 240);
+}
+
+.NUESTROS-PROGRAMAS{
+    text-align: center;
+  
+}
+.card{
+    
+    background-size: cover;
+    border-radius: 10px;
+border-radius: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.267);
+    margin: 2px;
+}
+.rounded-circle{
+
+    width: 350px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title{
+text-align: center;
+font-weight: bold;
+}
+
+.card-text{
+text-align: justify;
+}
+
+.card{
+    border: none;
+}
+.contacto .container {
+    max-width: 1000px;
+    min-height: 100px;
+    padding: 20px;
+    text-align: center;
+}
+  /*background-color: rgb(132, 165, 165)*/
+.contacto .rectangulo {
+    position: absolute;
+    margin-inline: -5rem;
+    background-image: url(imagenes/linea\ escolar.jpg);
+    border-radius: 10px;
+    margin: auto;
+    border: solid white;
+
+}
+.contacto .titulo{
+    color: white;
+    font-size: 2rem;
+
+}
+
+.contacto .descripcion{
+    color:white;
+    font-size: 1rem;
+    text-align: center;
+}
+.contacto button{
+    color: white; font-weight: bold;
+    background-color: transparent; border: 2px solid white;
+    padding: 0.4rem 1rem; margin: 10px;
+    border-radius: 100px;
+    transition: all 0.1s ease-in-out;
+    justify-content: right;text-align: right;
+}
+.contacto button i{
+    color: white; font-size: 1.2rem;
+    transition: all 0.1s ease-in-out;
+}
+.contacto button:hover{
+    background-color:rgb(103, 88, 240);
+
+}
+.contacto .row {
+    display: flex;
+    align-items: center;
+}
+footer{
+  
+    background-color: black;
+    border-radius: 10px;
+    align-content: center;
+   
+}
+.logo-container{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafofooter{
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row a{
+  color: white;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 0.4rem 1rem;
+  margin: 10px; 
+  border: 0.3rem;
+  border-radius: 100px;
+  
+}
+.derechos-autor{
+    font-size: 15px;
+    color: gray;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
