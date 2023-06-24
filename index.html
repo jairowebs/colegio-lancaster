@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@600&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
@@ -89,7 +89,7 @@
                 <div class="col-12 col-md-8">
                     <h2><strong> RESEÑA HISTORICA</strong> </h2>
                     <br>
-                    <p id="reseñahistorica">  
+                  <p id="reseñahistorica">  
                         El Colegio Lancaster es una institución educativa con una rica historia que ha dejado una marca duradera en la comunidad
                         educativa. Fundado en [1980], el colegio ha sido un pilar en la educación de la región durante décadas. 
                         
@@ -107,31 +107,66 @@
                         y el espíritu emprendedor entre sus estudiantes. Además, ha promovido valores como la integridad, la responsabilidad y
                         el respeto hacia los demás, formando no solo académicamente, sino también moralmente a sus alumnos.  </p>
                 </div>
-                            <div class="col-12 col-md-4">
-                                <h2><strong> INGRESO DE USUARIOS</strong></h2><br>
-                                <div id="inicio-sesion" class="card">
-                                    <div class="card-body">
-                                        <form>
-                                            <div class=" md-4">
-                                                <label for="usuario" class="form-label">Usuario:</label><br>
-                                               <br> <input type="text" id="usuario" class="form-control" required>
-                                            </div>
-                                            <div class="md-4"><br>
-                                                <label for="contrasena" class="form-label">Contraseña:</label><br>
-                                               <br> <input type="password" id="contrasena" class="form-control" required>
-                                            </div><br>
-                                            <button type="submit" class="boton1">Iniciar sesión</button><br>
-                                           <br> <p>¿No tienes una cuenta? Regístrate aquí.</p>
-                                            <button class="boton1">Registro</button>
-                                        </form>
-                                    </div>
-                                </div>
-                          </div>
-                </div>
-            </div>
+    <div class="col-12 col-md-4">
+      <h2><strong> INGRESO DE USUARIOS</strong></h2><br>
+      <div id="inicio-sesion" class="card">
+          <div class="card-body">
+                    <form>
+                    <div class=" md-4">
+                        <label for="usuario" class="form-label">Usuario:</label><br>
+                            <br> <input type="text" id="usuario" class="form-control" required>
+                    </div>
+                 <div class="md-4"><br>
+                  <label for="contrasena" class="form-label">Contraseña:</label><br>
+                  <br> <input type="password" id="contrasena" class="form-control" required>
+                 </div><br>
+                        <button type="submit" class="boton1">Iniciar sesión</button><br>
+                        <br> <p>¿No tienes una cuenta? Regístrate aquí.</p>
+                         <button id="registroBtn" class="boton1">Registro</button>
+                         <div id="capaFlotante" class="capa-flotante">
+                    <div id="registroForm" class="registro-form">
+                          <h2>Formulario de Registro</h2><img id="imagen-registro" src="imagenes/icono.png" width="160px"  alt="">
+                        <form class="formulario-registro" style="text-align: left;">
+                          <label for="nombres"style="margin-right: 10px;">Nombres: </label>
+                          <input type="texto" id="nombres" required><br>
+                          <label for="apellidos"style="margin-right: 10px;">Apellidos: </label>
+                          <input type="texto" id="apellidos" required><br> 
+                          <label for="direccion"style="margin-right: 10px;">Direccion: </label>
+                          <input type="texto" id="direccion" required> <br>
+                          <label for="telefono"style="margin-right: 10px;">Telefono: </label>
+                          <input type="texto" id="telefono" required> <br>
+                          <label for="email"style="margin-right: 10px;">Email:</label>
+                          <input type="email" id="email" required> <br>
+                          <label for="usuario"style="margin-right: 10px;">Usuario: </label>
+                          <input type="text" id="usuario" required><br>
+                          <label for="password"style="margin-right: 10px;">Contraseña: </label>
+                          <input type="password" id="password" required> <br>
+                          <button  class="boton1" type="submit">Registrarse</button>
+                        </form>
+                    </div>
+                 </div> 
+              </div>     
+            </form>
         </div>
+     </div>
+  
+    </div>
     </section>
     <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+              <div class="text-center">
+                 <h2> NUESTRAS INSTALACIONES</h2><br>
+                  <iframe width="560" height="300"   src="https://www.youtube.com/embed/FEdeiV8vK70" title="YouTube video player"
+                   frameborder="20"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+             </div>
+         </div>
+     </div>
+ </div>
+        <br>    
     <diV class="NUESTROS-PROGRAMAS">  <h2><strong>NUESTROS PROGRAMAS</strong></h2></diV><br>
     <div  class="card-group ">
         <div class="card">
@@ -182,7 +217,7 @@
                 "Ponte en contacto y descubre todo lo que tenemos para ofrecerte. ¡No esperes más, contáctanos y déjanos sorprenderte!"
             </div>
             <div class="col-12 col-md-4 " >
-                <a href="mailito:elnegro_1_240@hotmail.com">
+                <a href="contacto.html">
                     <button type="button">
                         Enviar
                         <i class="bi bi-envelope-at-fill"></i>
@@ -203,6 +238,7 @@
     <div class="logo-container">
         <img  class="logo-container" src="imagenes/icono.png" width="160px"  alt="Logo"></div>
     <div class="parrafofooter"><p>"Construyendo conocimiento, forjando el futuro"</p></div>
+    <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"</p>
     <div  class="row ">
         <div class=" col-12 d-flex justify-content-center"> 
         <a href=""><i class="bi bi-whatsapp"></i></a>
@@ -215,7 +251,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-
+<script src="index.js"></script>
 </body>
 
 </html>
