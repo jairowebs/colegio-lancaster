@@ -16,7 +16,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@600&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      
 
 </head>
 
@@ -229,6 +230,22 @@
 
     </div>
 
+</div>
+<div class="floating-button">
+    <button id="mainButton" aria-label="Botón flotante">
+        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+    </button>
+    <div id="dropdown" class="dropdown">
+        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="bi bi-moon"
+                style="font-size: 20px;"></i></button>
+        <p>nocturno</p>
+        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="bi bi-fonts"
+                style="font-size: 20px;"></i></button>
+        <p>fuente</p>
+        <button onclick="toggleLecturaPagina()" class="subButton"><i class="bi bi-mic"
+                style="font-size: 20px;"></i></button>
+        <p>voz</p>
+    </div>
 </div>
 
 
