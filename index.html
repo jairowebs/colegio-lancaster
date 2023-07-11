@@ -17,14 +17,14 @@
             rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-md ">
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -33,7 +33,7 @@
                 <a class="navbar-brand" href="#">
                     <img class="imajen" src="imagenes/icono trasparente.png"  width="200px"  alt=""></a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                    <li class="nav-item">
+                    <li class="nav-item ">
                         <a class="nav-link " aria-current="page" href="index.html">inicio</a>
                     </li>
                     <li class="nav-item">
@@ -86,11 +86,11 @@
     <br>
     <section class="reseñahistorica ">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8">
+            <div class="row +">
+                <div class="col-12 col-md-8 ">
                     <h2><strong> RESEÑA HISTORICA</strong> </h2>
                     <br>
-                  <p id="reseñahistorica">  
+                  <p id="reseñahistorica bg-transparent">  
                         El Colegio Lancaster es una institución educativa con una rica historia que ha dejado una marca duradera en la comunidad
                         educativa. Fundado en [1980], el colegio ha sido un pilar en la educación de la región durante décadas. 
                         
@@ -110,7 +110,7 @@
                 </div>
     <div class="col-12 col-md-4">
       <h2><strong> INGRESO DE USUARIOS</strong></h2><br>
-      <div id="inicio-sesion" class="card">
+      <div id="inicio-sesion" class="card bg-transparent">
           <div class="card-body">
                     <form>
                     <div class=" md-4">
@@ -121,31 +121,8 @@
                   <label for="contrasena" class="form-label">Contraseña:</label><br>
                   <br> <input type="password" id="contrasena" class="form-control" required>
                  </div><br>
-                        <button type="submit" class="boton1">Iniciar sesión</button><br>
-                        <br> <p>¿No tienes una cuenta? Regístrate aquí.</p>
-                         <button id="registroBtn" class="boton1">Registro</button>
-                         <div id="capaFlotante" class="capa-flotante">
-                    <div id="registroForm" class="registro-form">
-                          <h2>Formulario de Registro</h2><img id="imagen-registro" src="imagenes/icono.png" width="160px"  alt="">
-                        <form class="formulario-registro" style="text-align: left;">
-                          <label for="nombres"style="margin-right: 10px;">Nombres: </label>
-                          <input type="texto" id="nombres" required><br>
-                          <label for="apellidos"style="margin-right: 10px;">Apellidos: </label>
-                          <input type="texto" id="apellidos" required><br> 
-                          <label for="direccion"style="margin-right: 10px;">Direccion: </label>
-                          <input type="texto" id="direccion" required> <br>
-                          <label for="telefono"style="margin-right: 10px;">Telefono: </label>
-                          <input type="texto" id="telefono" required> <br>
-                          <label for="email"style="margin-right: 10px;">Email:</label>
-                          <input type="email" id="email" required> <br>
-                          <label for="usuario"style="margin-right: 10px;">Usuario: </label>
-                          <input type="text" id="usuario" required><br>
-                          <label for="password"style="margin-right: 10px;">Contraseña: </label>
-                          <input type="password" id="password" required> <br>
-                          <button  class="boton1" type="submit">Registrarse</button>
-                        </form>
-                    </div>
-                 </div> 
+                        <button type="submit" class="boton1" onclick="mostrarMensaje()">Iniciar sesión</button><br>
+                       
               </div>     
             </form>
         </div>
@@ -167,10 +144,26 @@
          </div>
      </div>
  </div>
+<div class="floating-button">
+    <button id="mainButton" aria-label="Botón flotante">
+        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+    </button>
+    <div id="dropdown" class="dropdown">
+        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                style="font-size: 20px;"></i></button>
+        <p>nocturno</p>
+        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                style="font-size: 20px;"></i></button>
+        <p>fuente</p>
+        <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                style="font-size: 20px;"></i></button>
+        <p>voz</p>
+    </div>
+</div>
         <br>    
     <diV class="NUESTROS-PROGRAMAS">  <h2><strong>NUESTROS PROGRAMAS</strong></h2></diV><br>
     <div  class="card-group ">
-        <div class="card">
+        <div class="card bg-transparent">
             <img src="imagenes/testimonio 1.png"class="rounded-circle" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Estudios Personalizados</h5>
@@ -183,7 +176,7 @@
                 <p class="card-text"><small class="text-muted">24/11/2022</small></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card bg-transparent">
             <img src="imagenes/disiplinas-deportivas.webp" class="rounded-circle " alt="...">
             <div class="card-body">
                 <h5 class="card-title">Disciplinas Deportivas</h5>
@@ -194,7 +187,7 @@
                 <p class="card-text"><small class="text-muted">24/11/2022</small></p>
             </div>
         </div>
-        <div class="card">
+        <div class="card bg-transparent">
             <img src="imagenes/grados.jpg" class="rounded-circle" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Convenios Con Universidades</h5>
@@ -230,26 +223,10 @@
 
     </div>
 
-</div>
-<div class="floating-button">
-    <button id="mainButton" aria-label="Botón flotante">
-        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
-    </button>
-    <div id="dropdown" class="dropdown">
-        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="bi bi-moon"
-                style="font-size: 20px;"></i></button>
-        <p>nocturno</p>
-        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="bi bi-fonts"
-                style="font-size: 20px;"></i></button>
-        <p>fuente</p>
-        <button onclick="toggleLecturaPagina()" class="subButton"><i class="bi bi-mic"
-                style="font-size: 20px;"></i></button>
-        <p>voz</p>
-    </div>
-</div>
-
-
+  </div>
 </section>
+    
+
 <footer>
 
     <div class="logo-container">
