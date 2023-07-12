@@ -17,7 +17,7 @@
             rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
@@ -43,15 +43,31 @@
             </div>
         </div>
     </nav>
-     <div class="card mb-3" >
+    <div class="floating-button">
+        <button id="mainButton" aria-label="Botón flotante">
+            <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+        </button>
+        <div id="dropdown" class="dropdown">
+            <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                    style="font-size: 20px;"></i></button>
+            <p>nocturno</p>
+            <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                    style="font-size: 20px;"></i></button>
+            <p>fuente</p>
+            <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                    style="font-size: 20px;"></i></button>
+            <p>voz</p>
+        </div>
+    </div>
+     <div class="card mb-3 bg-transparent" >
          <div class="row  g-0">
             <div class="col-md-4">
               <img  id="imagenes-servicios" src="imagenes/preescolar-servicios.jpg" class="img-fluid rounded-start" alt="...">
             </div>
              <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body ">
                     <h5 class="card-title">Preescolar:</h5>
-                    <p class="card-text">Programa de educación temprana: Un enfoque especializado en estimulación temprana, promoviendo el desarrollo cognitivo,
+                    <p class="card-text ">Programa de educación temprana: Un enfoque especializado en estimulación temprana, promoviendo el desarrollo cognitivo,
                     emocional y social de los niños pequeños.
                     Ambientes de aprendizaje seguros y acogedores: Espacios diseñados para que los niños se sientan cómodos, motivados y
                     dispuestos a explorar y descubrir el mundo que les rodea.
@@ -69,7 +85,7 @@
              </div>
           </div>
      </div>
-    <div class="card mb-3">
+    <div class="card mb-3 bg-transparent">
         <div class="row g-0">
             <div class="col-md-4">
                 <img  id="imagenes-servicios"src="imagenes/primaria-servicios.jpg" class="img-fluid rounded-start" alt="...">
@@ -96,7 +112,7 @@
         </div>
     </div>
     </div>
-    <div class="card mb-3">
+    <div class="card mb-3 bg-transparent">
         <div class="row g-0">
             <div class="col-md-4">
                 <img id="imagenes-servicios" src="imagenes/testimonio 1.png" class="img-fluid rounded-start"
@@ -125,7 +141,7 @@
         </div>
     </div>
     </div>
-<div class="card mb-3">
+<div class="card mb-3 bg-transparent">
     <div class="row g-0">
         <div class="col-md-4">
             <iframe
@@ -183,22 +199,52 @@
         <div class="parrafofooter">
             <p>"Construyendo conocimiento, forjando el futuro"</p>
         </div>
-        <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"</p>
+        <p class="text-center text-white">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"</p>
         <div class="row ">
             <div class=" col-12 d-flex justify-content-center">
                 <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href="https://www.facebook.com/cblancastercali/?locale=es_LA"><i class="bi bi-facebook"></i></a>
                 <a href=""><i class="bi bi-envelope-at-fill"></i></a>
             </div>
         </div>
-        <div class="derechos-autor">
-            <p>creado por grupo codelogi (2023) &#169;</p>
         </div>
+        </div>
+        <div class="mapa-sitio text-center text-white ">
+            <h5 onclick="toggleCategorias() ">Mapa del sitio</h5>
+            <ul id="categorias">
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <ul class="subcategorias text-center">
+                        <li>reseña historica</li>
+                        <li>inicio de sesion</li>
+                        <li>inf general</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul class="subcategorias text-center">
+                        <li>preescolar</li>
+                        <li>primaria</li>
+                        <li>segundaria</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                    <ul class="subcategorias text-center">
+                        <li>formulario </li>
+                        <li>correo</li>
+                        <li>redes sociales</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="derechos-autor"><p>creado por grupo codelogi (2023) &#169;</p></div>
     </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
             crossorigin="anonymous"></script>
-        
+        <script src="index.js"></script>
         </body>
         
         </html>

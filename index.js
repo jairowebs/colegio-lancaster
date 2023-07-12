@@ -44,4 +44,11 @@ var voz;
 
  function mostrarMensaje() {
     alert("¡Hola! ING Sandra aun este proyecto no cuenta con la construccion del backend RTA.equipo de desarrollo CODELOGY");
-  }
+}
+ function toggleCategorias() {
+        var subcategorias = document.querySelectorAll(".subcategorias");
+        subcategorias.forEach(function(subcategoria) {
+            subcategoria.classList.toggle("show");
+        });
+    }
+   
