@@ -1,0 +1,122 @@
+@use 'variables' as v;
+
+.login {
+    position: relative;
+    font-size: v.$label-medium-label-size ;
+    line-height: 20px;
+    font-weight: 500;
+    font-family:v.$font;
+    color: v.$brand-purple;
+    text-align: center;
+  }
+  .button {
+    cursor: pointer;
+    border: 0;
+    padding: v.$padding-3xs v.$padding-xl ;
+    background-color: v.$brand-purple-100 ;
+    border-radius: v.$br-7xs;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sign-up {
+    position: relative;
+    font-size: v.$label-medium-label-size ;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: v.$font;
+    color: v.$default-white;
+    text-align: center;
+  }
+  .button1,
+  .right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .button1 {
+    cursor: pointer;
+    border: 0;
+    padding: v.$padding-3xs v.$padding-xl;
+    background-color: v.$brand-purple;
+    border-radius: v.$br-7xs ;
+    align-items: center;
+  }
+  .right-nav {
+    position: absolute;
+    top: calc(50% - 20px);
+    right: 165px;
+    overflow: hidden;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .logotype-dark {
+    position: relative;
+    width: 105px;
+    height: 28px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .label {
+    position: relative;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .header-menu-default {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .essential-icons-chevron-down {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .header-menu-dropdown,
+  .left-nav,
+  .nav-items {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .header-menu-dropdown {
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .left-nav,
+  .nav-items {
+    align-items: center;
+    gap:v.$gap-13xl ;
+  }
+  .left-nav {
+    position: absolute;
+    top: calc(50% - 14px);
+    left: 165px;
+    align-items: flex-start;
+  }
+  .header-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: v.$default-white;
+    box-shadow: 0 1px 0#e5e9f2;
+  }
+  .header-1-parent {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    text-align: left;
+    font-size: v.$label-medium-label-size;
+    color: v.$text-gray-900 ;
+    font-family: v.$font ;
+  }
+  

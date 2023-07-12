@@ -1,0 +1,143 @@
+@use 'variables' as v;
+
+html{
+  height: 100%;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+footer{
+  width: 100%;
+}
+.company {
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+    display: inline-block;
+    width: 255px;
+  }
+  .about-us {
+    align-self: stretch;
+    position: relative;
+    line-height: 24px;
+  }
+  .list-items {
+    width: 255px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: v.$gap-xs ;
+    font-size: v.$body-body-2;
+    color: v.$text-gray-200;
+  }
+  .col-1 {
+    width: 255px;
+    flex-shrink: 0;
+  }
+  .col-1,
+  .col-3 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: v.$gap-5xl;
+  }
+  .install-app {
+    position: relative;
+    line-height: 28px;
+    font-weight: 500;
+  }
+  .download-badge-google-play-b {
+    position: relative;
+    width: 162px;
+    height: 48px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .badges,
+  .big-footer {
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+  }
+  .badges {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+  .big-footer {
+    flex-direction: row;
+    padding: 64px 0;
+    justify-content: space-between;
+  }
+  .divider-icon {
+    position: relative;
+    width: 1440px;
+    height: 1px;
+    opacity: 0.1;
+  }
+  .landify-ui-kit {
+    position: relative;
+    line-height: 24px;
+    display: inline-block;
+    width: 540px;
+    flex-shrink: 0;
+  }
+  .social-icons1 {
+    position: relative;
+    width: 32px;
+    height: 32px;
+  }
+  .social-icons {
+    flex-direction: row;
+    align-items: center;
+    gap: v.$gap-5xl;
+  }
+  .small-footer,
+  .social-icons,
+  .social-links {
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .social-links {
+    width: 540px;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .small-footer {
+    flex-direction: row;
+    padding: 24px 0;
+    align-items: center;
+    font-size: v.$body-body-2-size ;
+    color: v.$text-gray-300 ;
+  }
+  .footer-big-1,
+  .footer-big-1-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-big-1 {
+    align-self: stretch;
+    background-color: v.$default-black;
+    justify-content: flex-start;
+  }
+  .footer-big-1-parent {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    font-size: v.$subtitle-subtitle-2-size;
+    color: v.$text-gray-100;
+    font-family: v.$font;
+  }
+  
