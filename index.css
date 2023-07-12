@@ -1,8 +1,9 @@
 
 .navbar {
     padding: 1.5rem;
-       
+    background-color: white;
 }
+
 
 .navbar-collapse {
     align-items: center;
@@ -12,7 +13,7 @@
 }
 
 body {
-    background-image: url(imagenes/abstracto.png);
+    
     background-size: auto;
     margin-left: 40px;
     margin-right: 40px;
@@ -55,7 +56,6 @@ p{
 
 #reseñahistorica {
 
-    background-image: url(imagenes/fachada-opaciti.jpg);
     background-size: cover;
     background-blend-mode: overlay;
     background-size: cover;
@@ -68,11 +68,12 @@ p{
 }
 
 
-
 #inicio-sesion{
-    background-image: url(imagenes/abstracto-tarjetas.jpg); background-size: cover;
+    
     border-radius: 20px;border: 1.5px solid rgba(0, 0, 0, 0.267);
+    
 }
+
 .boton1{
         color:black;
         background-color: white;
@@ -87,6 +88,7 @@ p{
 .boton1:hover{
     background-color:rgb(103, 88, 240);
 }
+
 
 .NUESTROS-PROGRAMAS{
     text-align: center;
@@ -170,7 +172,7 @@ text-align: justify;
 footer{
   
     background-color: black;
-    border-radius: 10px;
+    border-radius: 5px;
     align-content: center;
    
 }
@@ -207,3 +209,86 @@ footer{
     justify-content: center;
     display: flex;
 }
+ /*pagina de servicios*/
+#imagenes-servicios{
+    width: 400px;
+    position:relative;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+
+}
+
+#mainButton,
+.subButton {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+
+
+
+}
+
+#mainButton:hover {
+    background-color: #232b3088;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+
+
+}
+
+.dropdown .subButton {
+    display: block;
+    width: 50px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    text-align: center;
+}
+
+.dropdown .subButton:hover {
+    background-color: #232b3088;
+}
+
+ body {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+.modo-nocturno {
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-size: 16px;
+}
+
+.duplicar {
+    font-size: 20px;
+}
+ .mapa-sitio {
+     text-align: center;
+ }
+
+ .subcategorias {
+     display: none;
+     text-align: left;
+ }
+
+ .subcategorias.show {
+     display: block;
+ }
