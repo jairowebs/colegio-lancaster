@@ -21,156 +21,158 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md ">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-md ">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">
+                    <img class="imajen" src="imagenes/icono trasparente.png" width="200px" alt=""></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="servicios.html">servicos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contacto.html">contacto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="floating-button">
+        <button id="mainButton" aria-label="Botón flotante">
+            <i class="bi bi-universal-access" style="font-size: 30px;"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">
-                <img class="imajen" src="imagenes/icono trasparente.png" width="200px" alt=""></a>
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="index.html">inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="servicios.html">servicos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="contacto.html">contacto</a>
+        <div id="dropdown" class="dropdown">
+            <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                    style="font-size: 20px;"></i></button>
+            <p>nocturno</p>
+            <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                    style="font-size: 20px;"></i></button>
+            <p>fuente</p>
+            <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                    style="font-size: 20px;"></i></button>
+            <p>voz</p>
         </div>
     </div>
-</nav>
-<div class="floating-button">
-    <button id="mainButton" aria-label="Botón flotante">
-        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
-    </button>
-    <div id="dropdown" class="dropdown">
-        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
-                style="font-size: 20px;"></i></button>
-        <p>nocturno</p>
-        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
-                style="font-size: 20px;"></i></button>
-        <p>fuente</p>
-        <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
-                style="font-size: 20px;"></i></button>
-        <p>voz</p>
-    </div>
-</div>
-<div class="container">
-    <h1>Contacto</h1>
-    <p>¡Estamos encantados de ayudarte! Completa el formulario de contacto y nos pondremos en contacto contigo lo antes
-        posible.</p>
-
-    <form action="enviar-formulario.php" method="post">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="email" class="form-label">Correo electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-
-        <div class="mb-3">
-            <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-</div><br>
-<br>
-<section class="contacto">
     <div class="container">
-        <div class="container rectangulo">
-            <div class="row">
-                <div class="col-12 col-md-4 titulo">
-                    <div id="titulo"> "HABLEMOS"</div>
-                </div>
-                <div class="col-12 col-md-4 descripcion">
-                    "Ponte en contacto y descubre todo lo que tenemos para ofrecerte. ¡No esperes más, contáctanos y
-                    déjanos sorprenderte!"
-                </div>
-                <div class="col-12 col-md-4 ">
-                    <a href="contacto.html">
-                        <button type="button">
-                            Enviar
-                            <i class="bi bi-envelope-at-fill"></i>
-                        </button>
-                    </a>
+        <h1>Contacto</h1>
+        <p>¡Estamos encantados de ayudarte! Completa el formulario de contacto y nos pondremos en contacto contigo lo
+            antes
+            posible.</p>
+
+        <form action="enviar-formulario.php" method="post">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div><br>
+    <br>
+    <section class="contacto">
+        <div class="container">
+            <div class="container rectangulo">
+                <div class="row">
+                    <div class="col-12 col-md-4 titulo">
+                        <div id="titulo"> "HABLEMOS"</div>
+                    </div>
+                    <div class="col-12 col-md-4 descripcion">
+                        "Ponte en contacto y descubre todo lo que tenemos para ofrecerte. ¡No esperes más, contáctanos y
+                        déjanos sorprenderte!"
+                    </div>
+                    <div class="col-12 col-md-4 ">
+                        <a href="contacto.html">
+                            <button type="button">
+                                Enviar
+                                <i class="bi bi-envelope-at-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
-    
-    </div>
-
-
-</section>
-<footer>
-
-    <div class="logo-container">
-        <img class="logo-container" src="imagenes/icono.png" width="160px" alt="Logo">
-    </div>
-    <div class="parrafofooter">
-        <p>"Construyendo conocimiento, forjando el futuro"</p>
-    </div>
-    <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"</p>
-    <div class="row ">
-        <div class=" col-12 d-flex justify-content-center">
-            <a href=""><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.facebook.com/cblancastercali/?locale=es_LA"><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-envelope-at-fill"></i></a>
         </div>
-    </div>
-    </div>
-    </div>
-    <div class="mapa-sitio text-center">
-        <h5 onclick="toggleCategorias() ">Mapa del sitio</h5>
-        <ul  id="categorias">
-            <li>
-                <a href="index.html">Inicio</a>
-                <ul class="subcategorias text-center">
-                    <li>reseña historica</li>
-                    <li>inicio de sesion</li>
-                    <li>inf general</li>
-                </ul>
-            </li>
-            <li>
-                <a href="servicios.html">Servicios</a>
-                <ul class="subcategorias text-center">
-                    <li>preescolar</li>
-                    <li>primaria</li>
-                    <li>segundaria</li>
-                </ul>
-            </li>
-            <li>
-                <a href="contacto.html">Contacto</a>
-                <ul class="subcategorias text-center">
-                    <li>formulario </li>
-                    <li>correo</li>
-                    <li>redes sociales</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
 
-    <div class="derechos-autor">
-        <p>creado por grupo codelogi (2023) &#169;</p>
-    </div>
-</footer>
-    
- 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-        </body>
-        
-        </html>
+
+    </section>
+    <footer>
+
+        <div class="logo-container">
+            <img class="logo-container" src="imagenes/icono.png" width="160px" alt="Logo">
+        </div>
+        <div class="parrafofooter">
+            <p>"Construyendo conocimiento, forjando el futuro"</p>
+        </div>
+        <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"
+        </p>
+        <div class="row ">
+            <div class=" col-12 d-flex justify-content-center">
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.facebook.com/cblancastercali/?locale=es_LA"><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-envelope-at-fill"></i></a>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="mapa-sitio text-center">
+            <h5 onclick="toggleCategorias() ">Mapa del sitio</h5>
+            <ul id="categorias">
+                <li>
+                    <a href="index.html">Inicio</a>
+                    <ul class="subcategorias text-center">
+                        <li>reseña historica</li>
+                        <li>inicio de sesion</li>
+                        <li>inf general</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                    <ul class="subcategorias text-center">
+                        <li>preescolar</li>
+                        <li>primaria</li>
+                        <li>segundaria</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                    <ul class="subcategorias text-center">
+                        <li>formulario </li>
+                        <li>correo</li>
+                        <li>redes sociales</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="derechos-autor">
+            <p>creado por grupo codelogi (2023) &#169;</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
