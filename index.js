@@ -1,4 +1,4 @@
-document.getElementById("mainButton").addEventListener("click", function() {
+document.getElementById("mainButton").addEventListener("click", function () {
   var dropdown = document.getElementById("dropdown");
   if (dropdown.style.display === "none") {
     dropdown.style.display = "block";
@@ -20,14 +20,14 @@ function duplicarTamano() {
 
 var lecturaActiva = false;
 var voz;
- function toggleLecturaPagina() {
+function toggleLecturaPagina() {
   if (lecturaActiva) {
     detenerLectura();
   } else {
     iniciarLectura();
   }
 }
- function iniciarLectura() {
+function iniciarLectura() {
   var texto = document.body.innerText;
   voz = new SpeechSynthesisUtterance(texto);
   voz.lang = "es-ES";
@@ -36,12 +36,15 @@ var voz;
   speechSynthesis.speak(voz);
   lecturaActiva = true;
 }
- function detenerLectura() {
+function detenerLectura() {
   speechSynthesis.cancel();
   lecturaActiva = false;
 }
 
-
- function mostrarMensaje() {
-    alert("¡Hola! ING Sandra aun este proyecto no cuenta con la construccion del backend RTA.equipo de desarrollo CODELOGY");
-  }
+window.addEventListener('DOMContentLoaded', (event) => {
+  const mapaTitulo = document.getElementById('mapa-titulo');
+  mapaTitulo.addEventListener('click', (e) => {
+    const sitemap = document.querySelector('.sitemap');
+    sitemap.classList.toggle('show');
+  });
+});
