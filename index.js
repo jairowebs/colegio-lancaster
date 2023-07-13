@@ -41,6 +41,10 @@ function detenerLectura() {
   lecturaActiva = false;
 }
 
+function mostrarMensaje() {
+  alert("¡Hola ING SANDRA! este proyecto aun no se realiza en backend");
+}
+
 window.addEventListener('DOMContentLoaded', (event) => {
   const mapaTitulo = document.getElementById('mapa-titulo');
   mapaTitulo.addEventListener('click', (e) => {
