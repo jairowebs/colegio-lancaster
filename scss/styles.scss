@@ -1,6 +1,9 @@
 @use 'footer';
 @use 'variables' as v;
 @use 'header';
+@use 'seccionUnoHeader' as SeccionHeader;
+@use 'login';
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +20,15 @@
     line-height: 24px;
   }
 
+  .enlaces{
+    text-decoration: none;
+    color: v.$text-gray-900;
+  }
+
+  .enlacesFooter{
+    text-decoration: none;
+    color: v.$default-white;
+  }
 
   // ESTILOS JAIRO
 .navbar {
@@ -31,12 +43,12 @@
   font-weight: bold;
 }
 
-body {
-  background-image: url(imagenes/abstracto.png);
-  background-size: auto;
-  margin-left: 40px;
-  margin-right: 40px;
-}
+// body {
+//   background-image: url(imagenes/abstracto.png);
+//   background-size: auto;
+//   margin-left: 40px;
+//   margin-right: 40px;
+// }
 
 .carousel-inner {
   padding: 1.2rem;

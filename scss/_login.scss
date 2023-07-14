@@ -1,0 +1,259 @@
+@use 'variables' as v;
+
+.login-image-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 911px;
+    height: 912px;
+    object-fit: cover;
+  }
+  .vector-icon {
+    position: absolute;
+    top: 801px;
+    left: 652px;
+    width: 249px;
+    height: 226px;
+  }
+  .background,
+  .right-background-icon {
+    position: absolute;
+    top: 0;
+    height: 1010px;
+  }
+  .background {
+    left: 0;
+    background-color:v.$color-whitesmoke-100;
+    width: 943px;
+    overflow: hidden;
+  }
+  .right-background-icon {
+    left: 1290px;
+    width: 581px;
+    height: 683px;
+    background: #fff;
+    border-radius: 15px;
+    top: 50px;
+  }
+  .eamil-id-child,
+  .mail-icon {
+    position: absolute;
+    top: 34.33px;
+    height: 50.49px;
+  }
+  .eamil-id-child {
+    border: 0;
+    background-color:v.$color-whitesmoke-200;
+    left: 0;
+    border-radius: 8.08px;
+    width: 429.13px;
+    &::placeholder{
+        text-align:center;
+    }
+  }
+  .mail-icon {
+    left: 378.65px;
+    width: 50.49px;
+  }
+  .email-id,
+  .infoprovistechnologiescom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16.16px;
+    font-family:v.$font;
+    color: v.$color-dimgray;
+    text-align: left;
+  }
+  .infoprovistechnologiescom {
+    top: 48.47px;
+    left: 20.19px;
+    font-size: 14.14px;
+  }
+  .eamil-id,
+  .lock {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    width: 429.13px;
+    height: 84.82px;
+  }
+  .lock {
+    top: 34.33px;
+    left: 378.65px;
+    border-radius: 8.08px;
+    background-color: v.$color-midnightblue;
+    width: 50.49px;
+    height: 50.49px;
+  }
+  .frame-icon {
+    position: absolute;
+    top: 47.46px;
+    left: 391.77px;
+    width: 24.23px;
+    height: 24.23px;
+    overflow: hidden;
+  }
+  .password {
+    position: absolute;
+    top: 297px;
+    left: 0;
+    width: 429.13px;
+    height: 84.82px;
+  }
+  .forgot-password {
+    position: absolute;
+    top: 405px;
+    // left: 303px;
+    font-size: 14.14px;
+    text-decoration: underline;
+    font-family: v.$font;
+    color: v.$color-midnightblue ;
+    text-align: left;
+  }
+  .login-now-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8.08px;
+    background-color: v.$color-midnightblue;
+    box-shadow: 0 12.116715431213379px 24.23px rgba(1, 11, 253, 0.12);
+    width: 429.13px;
+    height: 50.49px;
+  }
+  .login-now1 {
+    position: absolute;
+    top: 13.13px;
+    left: 172.66px;
+    font-size: 16.16px;
+    font-weight: 600;
+    font-family:v.$font;
+    color: #fff;
+    text-align: center;
+  }
+  .login-now {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 464px;
+    left: 0;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 429.13px;
+    height: 50.49px;
+  }
+  .or-child {
+    top: 10.6px;
+    left: -0.5px;
+    border-top: 1px solid v.$color-silver;
+    box-sizing: border-box;
+    width: 185.28px;
+    height: 1.01px;
+  }
+  .or-child,
+  .or-item,
+  .or1 {
+    position: absolute;
+  }
+  .or-item {
+    top: 10.6px;
+    left: 243.85px;
+    border-top: 1px solid v.$color-silver;
+    box-sizing: border-box;
+    width: 185.28px;
+    height: 1.01px;
+  }
+  .or1 {
+    top: 0;
+    left: 203.96px;
+    font-size: 14.14px;
+    font-family: v.$font;
+    color: v.$color-silver;
+    text-align: left;
+  }
+  .or,
+  .sign-up-child {
+    position: absolute;
+    top: 552px;
+    left: 0;
+    width: 428.63px;
+    height: 21px;
+  }
+  .sign-up-child {
+    top: 0;
+    border-radius: 8.08px;
+    border: 1px solid v.$color-midnightblue ;
+    box-sizing: border-box;
+    width: 429.13px;
+    height: 50.49px;
+  }
+  .signup-now {
+    position: absolute;
+    top: 13.13px;
+    left: 165.6px;
+    font-size: 16.16px;
+    font-weight: 600;
+    font-family: v.$font;
+    color: v.$color-midnightblue;
+    text-align: center;
+  }
+  .sign-up {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 611px;
+    left: 0;
+    width: 429.13px;
+    height: 50.49px;
+  }
+  .login-into-your {
+    position: absolute;
+    top: 96px;
+    left: 188px;
+    font-size: 16.16px;
+    font-weight: 600;
+    font-family: v.$font;
+    color: v.$color-dimgray;
+    text-align: center;
+  }
+  .dummy-logo-icon {
+    position: absolute;
+    top: 0;
+    left: 78px;
+    width: 274px;
+    height: 106px;
+    object-fit: cover;
+  }
+  .right-frame {
+    position: absolute;
+    top: 100px;
+    left: 1355px;
+    width: 429.13px;
+    height: 690px;
+  }
+  .vector-icon1,
+  .vector-icon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 299px;
+    height: 240px;
+  }
+  .vector-icon2 {
+    top: 352px;
+    left: 281px;
+    width: 475px;
+    height: 313px;
+  }
+  .login-screen {
+    position: relative;
+    border-radius: 25px;
+    background-color: v.$color-whitesmoke-100 ;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+  }
+  

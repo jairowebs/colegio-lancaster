@@ -53,10 +53,12 @@
   }
   .logotype-dark {
     position: relative;
-    width: 105px;
-    height: 28px;
+    width: 130px;
+    height: 130px;
     overflow: hidden;
     flex-shrink: 0;
+    border-radius: 50%;
+    bottom: 50px;
   }
   .label {
     position: relative;

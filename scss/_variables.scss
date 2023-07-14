@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
-$font:'Poppins', sans-serif;
+$font:'Josefin Sans', sans-serif;
 $background-footer: #0B0D17;
 
-// variables Header
+// variables Menu navegacion
 
   /* font sizes */
   $label-medium-label-size: 14px;
@@ -24,9 +24,42 @@ $background-footer: #0B0D17;
   /* border radiuses */
   $br-7xs: 6px;
 
+// Fin variables Menu navegacion
 
+// variables parte superior "header"
 
-// Fin variables Header
+  /* font sizes */
+  $label-medium-label-size: 14px;
+  $label-large-label-size: 16px;
+  $heading-h1-size: 72px;
+  /* Colors */
+  $default-white: #fff;
+  $text-gray-900: #18191f;
+  $brand-purple: #8c30f5;
+
+  /* Gaps */
+  $gap-13xl: 32px;
+
+  /* Effects */
+  $navbar-shadow: 0px 1px 0px #e5e9f2;
+  $mobile-mockup-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+// fin variables parte superior
+
+// variables LOGIN
+     /* font sizes */
+  $font-size-base-2: 16.2px;
+  $font-size-mini-1: 14.1px;
+
+  /* Colors */
+  $color-whitesmoke-100: #f4f4f4;
+  $color-whitesmoke-200: #eee;
+  $color-dimgray: #555;
+  $color-midnightblue: #1e2772;
+  $color-silver: #c2c2c2;
+
+  /* border radiuses */
+  $br-4xs-1: 8.1px;
+// FIN varaibles LOGIN
 
 
 

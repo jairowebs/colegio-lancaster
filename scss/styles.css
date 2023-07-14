@@ -1,9 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 /* font sizes */
 /* Colors */
 /* Gaps */
 /* Paddings */
+/* border radiuses */
+/* font sizes */
+/* Colors */
+/* Gaps */
+/* Effects */
+/* font sizes */
+/* Colors */
 /* border radiuses */
 /* Gaps */
 /* fonts */
@@ -166,7 +173,7 @@ footer {
   text-align: left;
   font-size: 18px;
   color: #f4f5f7;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .login {
@@ -174,7 +181,7 @@ footer {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #8c30f5;
   text-align: center;
 }
@@ -196,7 +203,7 @@ footer {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #fff;
   text-align: center;
 }
@@ -228,10 +235,12 @@ footer {
 
 .logotype-dark {
   position: relative;
-  width: 105px;
-  height: 28px;
+  width: 130px;
+  height: 130px;
   overflow: hidden;
   flex-shrink: 0;
+  border-radius: 50%;
+  bottom: 50px;
 }
 
 .label {
@@ -301,7 +310,529 @@ footer {
   text-align: left;
   font-size: 14px;
   color: #18191f;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  width: 100%;
+}
+
+.background-icon,
+.iphone-x-icon,
+.screen-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 866px;
+  overflow: hidden;
+}
+
+.iphone-x-icon,
+.screen-icon {
+  height: 94.42%;
+  width: 87.21%;
+  top: 3.02%;
+  right: 6.28%;
+  bottom: 2.56%;
+  left: 6.51%;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.iphone-x-icon {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mobile-iphone-x {
+  position: relative;
+  box-shadow: 10px 15px 30px rgba(41, 41, 42, 0.5);
+  width: 320px;
+  height: 640px;
+  border-radius: 84px;
+}
+
+.phone-mockup {
+  position: absolute;
+  top: 168px;
+  left: 925px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.organise-projects {
+  margin: 0;
+}
+
+.organise-projects-get-container {
+  position: relative;
+  line-height: 98px;
+  font-weight: 800;
+  display: inline-block;
+  width: 730px;
+}
+
+.label {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.button {
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  padding: 12px 32px;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 16px;
+  color: #0b0d17;
+}
+
+.bg,
+.content {
+  position: absolute;
+}
+
+.content {
+  top: 240px;
+  left: 165px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0px 1px 0px #e5e9f2;
+  display: none;
+}
+
+.download-badge-google-play-b {
+  position: relative;
+  width: 135px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.right-nav {
+  position: absolute;
+  top: calc(50% - 20px);
+  right: 165px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.logotype-dark {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.label1 {
+  position: relative;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.header-menu-default {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.essential-icons-chevron-down {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.header-menu-dropdown,
+.left-nav,
+.nav-items {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.header-menu-dropdown {
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.left-nav,
+.nav-items {
+  align-items: center;
+  gap: 32px;
+}
+
+.left-nav {
+  position: absolute;
+  top: calc(50% - 14px);
+  left: 165px;
+  align-items: flex-start;
+}
+
+.header-7,
+.hero-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+}
+
+.header-7 {
+  height: 72px;
+  font-size: 16px;
+}
+
+.hero-3 {
+  background-color: #fff;
+  height: 866px;
+  overflow: hidden;
+}
+
+.hero-3-parent {
+  position: relative;
+  left: 220px;
+  display: flex;
+  width: 100%;
+  height: 920px;
+  text-align: left;
+  font-size: 72px;
+  color: #18191f;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.login-image-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 911px;
+  height: 912px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.vector-icon {
+  position: absolute;
+  top: 801px;
+  left: 652px;
+  width: 249px;
+  height: 226px;
+}
+
+.background,
+.right-background-icon {
+  position: absolute;
+  top: 0;
+  height: 1010px;
+}
+
+.background {
+  left: 0;
+  background-color: #f4f4f4;
+  width: 943px;
+  overflow: hidden;
+}
+
+.right-background-icon {
+  left: 1290px;
+  width: 581px;
+  height: 683px;
+  background: #fff;
+  border-radius: 15px;
+  top: 50px;
+}
+
+.eamil-id-child,
+.mail-icon {
+  position: absolute;
+  top: 34.33px;
+  height: 50.49px;
+}
+
+.eamil-id-child {
+  border: 0;
+  background-color: #eee;
+  left: 0;
+  border-radius: 8.08px;
+  width: 429.13px;
+}
+.eamil-id-child::-moz-placeholder {
+  text-align: center;
+}
+.eamil-id-child::placeholder {
+  text-align: center;
+}
+
+.mail-icon {
+  left: 378.65px;
+  width: 50.49px;
+}
+
+.email-id,
+.infoprovistechnologiescom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16.16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #555;
+  text-align: left;
+}
+
+.infoprovistechnologiescom {
+  top: 48.47px;
+  left: 20.19px;
+  font-size: 14.14px;
+}
+
+.eamil-id,
+.lock {
+  position: absolute;
+  top: 188px;
+  left: 0;
+  width: 429.13px;
+  height: 84.82px;
+}
+
+.lock {
+  top: 34.33px;
+  left: 378.65px;
+  border-radius: 8.08px;
+  background-color: #1e2772;
+  width: 50.49px;
+  height: 50.49px;
+}
+
+.frame-icon {
+  position: absolute;
+  top: 47.46px;
+  left: 391.77px;
+  width: 24.23px;
+  height: 24.23px;
+  overflow: hidden;
+}
+
+.password {
+  position: absolute;
+  top: 297px;
+  left: 0;
+  width: 429.13px;
+  height: 84.82px;
+}
+
+.forgot-password {
+  position: absolute;
+  top: 405px;
+  font-size: 14.14px;
+  text-decoration: underline;
+  font-family: "Josefin Sans", sans-serif;
+  color: #1e2772;
+  text-align: left;
+}
+
+.login-now-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8.08px;
+  background-color: #1e2772;
+  box-shadow: 0 12.1167154312px 24.23px rgba(1, 11, 253, 0.12);
+  width: 429.13px;
+  height: 50.49px;
+}
+
+.login-now1 {
+  position: absolute;
+  top: 13.13px;
+  left: 172.66px;
+  font-size: 16.16px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.login-now {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 464px;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 429.13px;
+  height: 50.49px;
+}
+
+.or-child {
+  top: 10.6px;
+  left: -0.5px;
+  border-top: 1px solid #c2c2c2;
+  box-sizing: border-box;
+  width: 185.28px;
+  height: 1.01px;
+}
+
+.or-child,
+.or-item,
+.or1 {
+  position: absolute;
+}
+
+.or-item {
+  top: 10.6px;
+  left: 243.85px;
+  border-top: 1px solid #c2c2c2;
+  box-sizing: border-box;
+  width: 185.28px;
+  height: 1.01px;
+}
+
+.or1 {
+  top: 0;
+  left: 203.96px;
+  font-size: 14.14px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #c2c2c2;
+  text-align: left;
+}
+
+.or,
+.sign-up-child {
+  position: absolute;
+  top: 552px;
+  left: 0;
+  width: 428.63px;
+  height: 21px;
+}
+
+.sign-up-child {
+  top: 0;
+  border-radius: 8.08px;
+  border: 1px solid #1e2772;
+  box-sizing: border-box;
+  width: 429.13px;
+  height: 50.49px;
+}
+
+.signup-now {
+  position: absolute;
+  top: 13.13px;
+  left: 165.6px;
+  font-size: 16.16px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: #1e2772;
+  text-align: center;
+}
+
+.sign-up {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 611px;
+  left: 0;
+  width: 429.13px;
+  height: 50.49px;
+}
+
+.login-into-your {
+  position: absolute;
+  top: 96px;
+  left: 188px;
+  font-size: 16.16px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  color: #555;
+  text-align: center;
+}
+
+.dummy-logo-icon {
+  position: absolute;
+  top: 0;
+  left: 78px;
+  width: 274px;
+  height: 106px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.right-frame {
+  position: absolute;
+  top: 100px;
+  left: 1355px;
+  width: 429.13px;
+  height: 690px;
+}
+
+.vector-icon1,
+.vector-icon2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 299px;
+  height: 240px;
+}
+
+.vector-icon2 {
+  top: 352px;
+  left: 281px;
+  width: 475px;
+  height: 313px;
+}
+
+.login-screen {
+  position: relative;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
 }
 
 * {
@@ -311,11 +842,21 @@ footer {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
+}
+
+.enlaces {
+  text-decoration: none;
+  color: #18191f;
+}
+
+.enlacesFooter {
+  text-decoration: none;
+  color: #fff;
 }
 
 .navbar {
@@ -327,13 +868,6 @@ body {
   justify-content: space-between;
   color: black;
   font-weight: bold;
-}
-
-body {
-  background-image: url(imagenes/abstracto.png);
-  background-size: auto;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .carousel-inner {
