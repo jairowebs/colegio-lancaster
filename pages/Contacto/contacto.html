@@ -7,7 +7,7 @@
     <meta name="description" content="pagina inspecciones calderon">
     <menta name="keywords" content="HTML,CSS,JavasCript,React">
         <meta name="viewport" content="widh=device=widh ,initial-scale=1">
-        <title>COLEGIO LANCASTER</title>
+        
         <link rel="icon" rounded-circle href="imagenes/icon traspa.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -15,38 +15,63 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rajdhani:wght@600&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="/sass/style.css">
+        <title>Contacto</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg-white">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">
-                    <img class="imajen" src="imagenes/icono trasparente.png" width="200px" alt=""></a>
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="index.html">inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="servicios.html">servicos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="contacto.html">contacto</a>
+    <main>
+            <!-- Menu navegacion -->
+    <nav>
+        <div class="header-1-parent">
+            <div class="header-1">
+              <a href="/pages/Login/login.html">
+              <div class="right-nav">
+                <button class="button">
+                  <div class="login">Ingresa a la APP</div>
+                </button>
+              </div>
+              </a>
+  
+              <div class="left-nav">
+                <a href="/pages/Index/index.html">
+                  <img class="logotype-dark" alt="" src="/assets/img/Lancastersinfondo.png" />
+                </a>
+                <div class="nav-items">
+                  <a class="enlaces" href="/pages/Index/index.html">
+                    <div class="header-menu-default">
+                      <div class="label">Inicio</div>
+                    </div>
+                  </a>
+                 
+                  <a class="enlaces" href="/pages/Servicios/servicios.html">
+                    <div class="header-menu-default">
+                      <div class="label">Servicios</div>
+                    </div>
+                  </a>
+  
+                  
+                  <div class="header-menu-default">
+                    <a class="enlaces" href="/pages/Contacto/contacto.html">Contacto</a>
+                      <!-- <div class="label"></div> -->
+                    </div>
+                </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
     </nav>
+  <!-- FIN Menu navegacion -->
+
+    
     <div class="container">
-        <h1>Contacto</h1>
-        <p>¡Estamos encantados de ayudarte! Completa el formulario de contacto y nos pondremos en contacto contigo lo
-            antes
-            posible.</p>
+        <h2 class="container_title">Contacto</h2>
+        <p>¡Estamos encantados de ayudarte! <br>
+             Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <br>
 
         <form action="enviar-formulario.php" method="post">
             <div class="mb-3">
@@ -66,10 +91,12 @@
 
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-    </div><br>
+    </div>
     <br>
+    <br>
+<!-- 
     <section class="contacto">
-        <div class="container">
+        <div class="contacto_container">
             <div class="container rectangulo">
                 <div class="row">
                     <div class="col-12 col-md-4 titulo">
@@ -87,17 +114,13 @@
                             </button>
                         </a>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-        </div>
-
-
+      </div> -->
     </section>
+
+     <!-- Boton accesibilidad -->
     <div class="floating-button">
         <button id="mainButton" aria-label="Botón flotante">
             <i class="bi bi-universal-access" style="font-size: 30px;"></i>
@@ -114,61 +137,105 @@
             <p>voz</p>
         </div>
     </div>
-    <footer>
+   
+     <!-- INICIO FOOTER -->
+     <footer>
+        <div class="footer-big-1-parent">
+            <div class="footer-big-1">
+              <div class="big-footer">
+                <div class="col-1">
+                  <div class="company">Colegio Lancaster</div>
+                  <div class="list-items">
 
-        <div class="logo-container">
-            <img class="logo-container" src="imagenes/icono.png" width="160px" alt="Logo">
-        </div>
-        <div class="parrafofooter">
-            <p>"Construyendo conocimiento, forjando el futuro"</p>
-        </div>
-        <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"
-        </p>
-        <div class="row ">
-            <div class=" col-12 d-flex justify-content-center">
-                <a href=""><i class="bi bi-whatsapp"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-envelope-at-fill"></i></a>
+                    <div class="about-us">
+                      <a class="enlacesFooter" href="/pages/Index/index.html">Inicio</a></div>
+
+                    <div class="about-us">
+                      <a class="enlacesFooter" href="/pages/Servicios/servicios.html">Servicios</a> </div>
+
+                    <div class="about-us">
+                      <a class="enlacesFooter" href="/Paginas/Contacto/contacto.html">Contactanos</a> </div>
+
+                    <div class="about-us">Acerca de Nosotros</div>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="company">
+                    <a class="enlacesFooter" href=""> Mapa del sitio</a></div>
+                  <!-- <div class="list-items">
+                    <div class="about-us">Help Center</div>
+                    <div class="about-us">Safety Center</div>
+                    <div class="about-us">Community Guidelines</div>
+                  </div> -->
+                </div>
+                <div class="col-3">
+                  <div class="company">Legal</div>
+                  <div class="list-items">
+                    <div class="about-us">Politica de privacidad</div>
+                    <div class="about-us">Terms of Service</div>  
+                  </div>
+                </div>
+                <div class="col-1">
+                  <div class="install-app">Descarga la APP</div>
+                  <div class="badges">
+                    <img
+                      class="download-badge-google-play-b"
+                      alt=""
+                      src="/assets/img/download-badge--google-play-badge.svg"
+                    />
+      
+                    <img
+                      class="download-badge-google-play-b"
+                      alt=""
+                      src="/assets/img/download-badge--app-store-badge.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+              <img class="divider-icon" alt="" src="/assets/img/divider.svg" />
+      
+              <div class="small-footer">
+                <div class="landify-ui-kit">
+                  © 2023 Codelogy All rights reserved
+                </div>
+                <div class="social-links">
+                  <div class="social-icons">
+                    <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                      <img
+                      class="social-icons1"
+                      alt="perfil-instagram"
+                      src="/assets/img/social-icons.svg"/>
+                    </a>
+                    
+                    <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                      <img
+                      class="social-icons1"
+                      alt="perfiltwitter"
+                      src="/assets/img/social-icons2.svg"
+                    />
+                    </a>
+                 
+                    <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                      <img
+                      class="social-icons1"
+                      alt="youtube"
+                      src="/assets/img/social-icons3.svg"
+                    />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="text-center text-white-50">
-            <h5 id="mapa-titulo">Mapa de Sitio</h5>
-            <ul class="sitemap">
-                <li><a href="index.html">Inicio</a>
-                    <ul>
-                        <li>reseña historica</li>
-                        <li>incio de sesion</li>
-                        <li>categorias</li>
-                    </ul>
-                </li>
-                <li><a href="servicios.html">Servicios</a>
-                    <ul>
-                        <li>preescolar</li>
-                        <li>primaria</li>
-                        <li>segundaria</li>
-                        <li>map del colegio</li>
-                    </ul>
-                </li>
-                <li><a href="contacto.html">Contacto</a>
-                    <ul>
-                        <li>formulario</li>
-                        <li>correo</li>
-                        <li>redes sociales</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="derechos-autor">
-            <p>creado por grupo codelogi (2023) &#169;</p>
-        </div>
+          </div>
     </footer>
+    <!-- FIN FOOTER -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-<script src="index.js"></script>
+<script src="/js/index.js"></script>
+</main>
 </body>
 
 </html>

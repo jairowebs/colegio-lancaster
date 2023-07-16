@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"/>
 
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/sass/style.css">
 
     <title>Colegio Lancaster</title>
 </head>
@@ -63,12 +63,6 @@
                         <a class="enlaces" href="/pages/Contacto/contacto.html">Contacto</a>
                           <!-- <div class="label"></div> -->
                         </div>
-                        <img
-                          class="essential-icons-chevron-down"
-                          alt=""
-                          src="/assets/img/essential-icons--chevrondown.svg"
-                        />
-                    
                     </div>
                     </div>
                   </div>
@@ -248,7 +242,26 @@
       </section>
       <!-- NUestros programas -->
 
-    <section class="contacto">
+       <!-- BOTON ACCESIBILIDAD -->
+    <div class="floating-button">
+      <button id="mainButton" aria-label="Botón flotante">
+          <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+      </button>
+      <div id="dropdown" class="dropdown">
+          <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                  style="font-size: 20px;"></i></button>
+          <p>nocturno</p>
+          <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                  style="font-size: 20px;"></i></button>
+          <p>fuente</p>
+          <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                  style="font-size: 20px;"></i></button>
+          <p>voz</p>
+      </div>
+  </div>
+  <!-- BOTON ACCESIBILIDAD -->
+
+    <!-- <section class="contacto">
         <div class="container">
             <div class="container rectangulo">
                 <div class="row">
@@ -267,7 +280,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- INICIO FOOTER -->
     <footer>
@@ -279,13 +292,13 @@
                   <div class="list-items">
 
                     <div class="about-us">
-                      <a class="enlacesFooter" href="/pages/Login/index.html">Inicio</a></div>
+                      <a class="enlacesFooter" href="/pages/Index/index.html">Inicio</a></div>
 
                     <div class="about-us">
-                      <a class="enlacesFooter" href="/Paginas/servicios/servicios.html">Servicios</a> </div>
+                      <a class="enlacesFooter" href="/pages/Servicios/servicios.html">Servicios</a> </div>
 
                     <div class="about-us">
-                      <a class="enlacesFooter" href="/Paginas/Contacto/contacto.html">Contactanos</a> </div>
+                      <a class="enlacesFooter" href="/pages/Contacto/contacto.html">Contactanos</a> </div>
 
                     <div class="about-us">Acerca de Nosotros</div>
                   </div>
@@ -364,7 +377,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="/js/index.js"></script>
 
 </body>
 

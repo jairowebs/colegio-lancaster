@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"
-    />
-    <link rel="stylesheet" href="../footer/global.css">
-    <link rel="stylesheet" href="../../scss/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"/>
+    <link rel="stylesheet" href="/sass/style.css">
 
     <title>Login</title>
 </head>
@@ -17,7 +15,7 @@
     <nav>
       <div class="header-1-parent">
           <div class="header-1">
-            <a href="/Paginas/Login/login.html">
+            <a href="/pages/Login/login.html">
             <div class="right-nav">
               <button class="button">
                 <div class="login">Ingresa a la APP</div>
@@ -26,17 +24,17 @@
             </a>
 
             <div class="left-nav">
-              <a href="/Paginas/index/index.html">
+              <a href="/pages/Index/index.html">
                 <img class="logotype-dark" alt="" src="/assets/img/Lancastersinfondo.png" />
               </a>
               <div class="nav-items">
-                <a class="enlaces" href="/Paginas/index/index.html">
+                <a class="enlaces" href="/pages/Index/index.html">
                   <div class="header-menu-default">
                     <div class="label">Inicio</div>
                   </div>
                 </a>
                
-                <a class="enlaces" href="/Paginas/servicios/servicios.html">
+                <a class="enlaces" href="/pages/Servicios/servicios.html">
                   <div class="header-menu-default">
                     <div class="label">Servicios</div>
                   </div>
@@ -44,15 +42,9 @@
 
                 
                 <div class="header-menu-default">
-                  <a class="enlaces" href="/Paginas/Contacto/contacto.html">Contacto</a>
+                  <a class="enlaces" href="/pages/Contacto/contacto.html">Contacto</a>
                     <!-- <div class="label"></div> -->
                   </div>
-                  <img
-                    class="essential-icons-chevron-down"
-                    alt=""
-                    src="/assets/img/essential-icons--chevrondown.svg"
-                  />
-              
               </div>
               </div>
             </div>
@@ -61,51 +53,46 @@
   </nav>
 <!-- FIN Menu navegacion -->
 
-<!--  -->
+<!--FORMULARIO  -->
 <div class="login-screen">
   <div class="background">
-    <img
-      class="login-image-icon"
-      alt=""
-      src="/assets/img/login-image@2x.png"
-    />
-
+    <img class="login-image-icon" alt="loginImage" src="/assets/img/login-image@2x.png"/>
     <img class="vector-icon" alt="" src="/assets/img/vector.svg" />
   </div>
 
-  <div class="right-background-icon">
-    
-  </div>
-  <!-- <img
-    class="right-background-icon"
-    alt="cuadro blanco"
-    src="/assets/img/right-background.svg"
-  /> -->
+  <div class="right-background-icon"> </div>
 
-  <form class="right-frame">
+<!-- INICIO INPUTS -->
+  <form class="right-frame" action="#" method="post">
+
     <div class="eamil-id">
-      <label class="email-id">Email:</label>
-      <input placeholder="ejemplo@lancaster.com" class="eamil-id-child" type="email" maxlength minlength />
-      <img class="mail-icon" alt="emailIcon" src="/assets/img/mail-icon.svg" />
-      <!-- <div class="infoprovistechnologiescom">
-        
-      </div> -->
+      <ul>
+        <li>
+          <label for="email" class="email-id">Email</label>
+          <input placeholder="ejemplo@lancaster.com" class="eamil-id-child" type="email"  autofocus required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" />
+          <img class="mail-icon" alt="emailIcon" src="/assets/img/mail-icon.svg" />
+        </li>
     </div>
+
     <div class="password">
-      <input placeholder="Ingresa tu Contraseña" class="eamil-id-child" type="password" maxlength minlength />
+      <li>
+        <label for="password" class="email-id">Contraseña</label>
+        <input placeholder="Ingresa tu Contraseña" class="eamil-id-child" type="password" maxlength="16" required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" />
+        <div class="lock"></div>
+        <img class="frame-icon" alt="frame" src="/assets/img/frame.svg" />
+      </li>
+    </ul>
 
-      <div class="lock"></div>
-      <label class="email-id">Contraseña</label>
-      <img class="frame-icon" alt="frame" src="/assets/img/frame.svg" />
-
-      
       <div class="infoprovistechnologiescom"></div>
     </div>
-    <a href="#" class="forgot-password">Olvidaste tu contraseña?</a>
-    <button class="login-now">
-      <div class="login-now-child"></div>
-      <a href="#" class="login-now1">Iniciar Sesion</a>
-    </button>
+
+    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+
+    
+      <button type="submit" class="login-now" >
+        Iniciar Sesión
+      </button>
+    
     <!-- <div class="or">
       <div class="or-child"></div>
       <div class="or-item"></div>
@@ -123,6 +110,25 @@
   <img class="vector-icon2" alt="" src="/assets/img/vector2.svg" />
 </div>
 
+  <!-- BOTON ACCESIBILIDAD -->
+  <div class="floating-button">
+    <button id="mainButton" aria-label="Botón flotante">
+        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+    </button>
+    <div id="dropdown" class="dropdown">
+        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                style="font-size: 20px;"></i></button>
+        <p>nocturno</p>
+        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                style="font-size: 20px;"></i></button>
+        <p>fuente</p>
+        <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                style="font-size: 20px;"></i></button>
+        <p>voz</p>
+    </div>
+</div>
+<!-- BOTON ACCESIBILIDAD -->
+
 
         <!-- INICIO FOOTER -->
         <footer>
@@ -134,10 +140,10 @@
                     <div class="list-items">
   
                       <div class="about-us">
-                        <a class="enlacesFooter" href="/Paginas/index/index.html">Inicio</a></div>
+                        <a class="enlacesFooter" href="/pages/Index/index.html">Inicio</a></div>
   
                       <div class="about-us">
-                        <a class="enlacesFooter" href="/Paginas/servicios/servicios.html">Servicios</a> </div>
+                        <a class="enlacesFooter" href="/pages/Servicios/servicios.html">Servicios</a> </div>
   
                       <div class="about-us">
                         <a class="enlacesFooter" href="/Paginas/Contacto/contacto.html">Contactanos</a> </div>
