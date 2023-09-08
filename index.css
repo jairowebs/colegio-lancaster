@@ -1,6 +1,6 @@
 
 .navbar {
-    padding: 1.5rem;
+   padding: -5rem;
     background-color: transparent;
 }
 
@@ -8,15 +8,77 @@
 .navbar-collapse {
     align-items: center;
     justify-content: space-between;
-    color: black; 
+    color: #6D7358; 
     font-weight: bold;
 }
 
+
+
+.logo-colegio img {
+    color: white;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+    /* Agrega una sombra */
+    transition: transform 0.3s ease-in-out;
+    /* Agrega una transición suave */
+}
+
+.logo-colegio img:hover {
+    transform: translateY(-9px);
+    /* Eleva la imagen 5px hacia arriba */
+}
+.logo-colegio {
+    background: linear-gradient(to right, #F2F2F2,#6d735877);
+    padding: 200px 15px 55px 50px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-content {
+    margin-right: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-content h3 {
+    color: #6D7358;
+   
+    margin: 0;
+}
+
+.lista{
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    color: #6D7358;
+    justify-content: space-between ;
+    align-items: center;
+    
+}
+.text-content i{
+    font-size: 20px;
+    color: #5E7314;
+
+}
+
+.ventajas ul{
+    justify-content: center;
+    padding: 20px 40px;
+    margin: 10px;
+}
 body {
     
     background-size: auto;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .carousel-inner {
@@ -34,18 +96,21 @@ body {
 
         }
 h2{
+    color: #6D7358;
 font-family: 'Cinzel', serif;
     font-family: 'Lobster', cursive;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Rajdhani', sans-serif;
 }
 h5{
+    color: #6D7358;
     font-family: 'Cinzel', serif;
         font-family: 'Lobster', cursive;
         font-family: 'Orbitron', sans-serif;
         font-family: 'Rajdhani', sans-serif;
 }
 p{
+    color: #6D7358;
     font-family: 'Cinzel', serif;
         font-family: 'Lobster', cursive;
         font-family: 'Orbitron', sans-serif;
@@ -54,26 +119,43 @@ p{
         
 
 
-#reseñahistorica {
-
-    background-size: cover;
-    background-blend-mode: overlay;
-    background-size: cover;
-    color: rgb(12, 12, 12);
-    justify-content: center;
-    text-align: justify;
-    padding: 20px;
-    border-radius: 20px; border: 1.5px solid rgba(0, 0, 0, 0.267);
-   
+.reseñahistorica {
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.267);
+    padding: 50px;
+    margin: 10px 40px;
 }
-
-
 
 #inicio-sesion{
-    
+    padding: 20px;
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
     border-radius: 20px;border: 1.5px solid rgba(0, 0, 0, 0.267);
+    }
+
+.bi {
     
+    font-size: 30px;
+    
+
 }
+
+.usuario{
+    padding: 10px;
+    margin: 5px;
+}
+
+.input{
+    padding: 0px 10px;
+    margin: 0px;
+    outline: none;
+    border: none;
+    color: black;
+    border-bottom:solid 1px black;
+}
+    
+
+
 .boton1{
         color:black;
         background-color: white;
@@ -88,7 +170,32 @@ p{
 .boton1:hover{
     background-color:rgb(103, 88, 240);
 }
+.video{
+    width: 450px;
+    padding: 10px;
+    margin: 20px;
+}
+.instalaciones1{
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    border: 1.5px solid rgba(0, 0, 0, 0.082);
+    justify-content: center;
+    text-align: center;
+    padding: 4px ;
+    margin: 3px 3px;
+    background: linear-gradient(to right, #F2F2F2, #6d735877);
+}
 
+.n-instalaciones{
+    padding: 30px;
+    margin: 10px;
+    justify-content: center;
+
+
+}
+.instalaciones{
+    padding: 10px;
+        margin: 20px;
+}
 
 .NUESTROS-PROGRAMAS{
     text-align: center;

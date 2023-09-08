@@ -22,8 +22,10 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-md bg-white">
+<div>
+    
+</div>
+    <nav class="navbar navbar-expand-md bg-white fixed-top">
         <div class="container-fluid ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +33,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand" href="#">
-                    <img class="imajen" src="imagenes/icono trasparente.png" width="200px" alt=""></a>
+                    <img class="imajen" src="imagenes/log-codelogy.png" width="250px" alt=""></a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item ">
                         <a class="nav-link " aria-current="page" href="index.html">inicio</a>
@@ -40,10 +42,28 @@
                         <a class="nav-link" aria-current="page" href="servicios.html">servicos</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="nosotros.html">nosotros</a>
+                    <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="contacto.html">contacto</a>
             </div>
         </div>
     </nav>
+<div class="logo-colegio">
+    <div class="logo-content">
+        <img src="imagenes/icono trasparente.png" width="200px" alt="">
+    </div>
+    <div class="text-content">
+        <h3>"Preparando Líderes para un Futuro Brillante en Lancaster"</h3>
+        <div class="lista">
+                <i class="fas fa-check-circle"></i>
+                49 Años enseñando
+                <i class="fas fa-check-circle"></i>
+                +20,000 Graduados
+                <i class="fas fa-check-circle"></i>
+                +19 Programas Académicos 
+        </div>
+    </div>
+</div>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -84,89 +104,76 @@
         </button>
     </div>
     <br>
-    <section class="reseñahistorica ">
-        <div class="container">
-            <div class="row +">
-                <div class="col-12 col-md-8 ">
-                    <h2><strong> RESEÑA HISTORICA</strong> </h2>
-                    <br>
-                    <p id="reseñahistorica bg-transparent">
-                        El Colegio Lancaster es una institución educativa con una rica historia que ha dejado una marca
-                        duradera en la comunidad
-                        educativa. Fundado en [1980], el colegio ha sido un pilar en la educación de la región durante
-                        décadas.
-
-                        El colegio se estableció con el objetivo de proporcionar una educación integral de alta calidad
-                        para los estudiantes,
-                        combinando una sólida formación académica con un enfoque en el desarrollo personal y el
-                        liderazgo. <br> Desde sus inicios, se
-                        ha destacado por su compromiso con la excelencia educativa y por su capacidad para adaptarse a
-                        los cambios y desafíos de
-                        la sociedad,
-
-                        A lo largo de los años, el Colegio Lancaster ha experimentado un crecimiento significativo. Ha
-                        ampliado sus
-                        instalaciones, ha mejorado sus programas académicos y ha incorporado tecnología moderna para
-                        enriquecer la experiencia
-                        de aprendizaje de sus estudiantes. <br> También ha establecido alianzas con otras instituciones
-                        educativas y organizaciones,
-                        tanto a nivel local como internacional, con el fin de brindar oportunidades de aprendizaje más
-                        amplias y diversas. <br>
-
-                        El Colegio Lancaster ha cultivado una cultura de excelencia académica, fomentando el pensamiento
-                        crítico, la creatividad
-                        y el espíritu emprendedor entre sus estudiantes. Además, ha promovido valores como la
-                        integridad, la responsabilidad y
-                        el respeto hacia los demás, formando no solo académicamente, sino también moralmente a sus
-                        alumnos. </p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h2><strong> INGRESO DE USUARIOS</strong></h2><br>
-                    <div id="inicio-sesion" class="card bg-transparent">
-                        <div class="card-body">
-                            <form>
-                                <div class=" md-4"><br>
-                                    <div class="input-group mb-3">
-                                        <label class="input-group-text" for="inputGroupSelect01">seleccione</label>
-                                        <select class="form-select" id="inputGroupSelect01">
-                                            <option selected>tipo de usuario</option>
-                                            <option value="1">Familias</option>
-                                            <option value="2">Educadores</option>
-                                    
-                                        </select>
-                                    </div>
-                                    
-                                    <label for="usuario" class="form-label">Usuario:</label><br>
-                                    <br> <input type="text" id="usuario" class="form-control" required>
-                                </div>
-                                <div class="md-4"><br>
-                                    <label for="contrasena" class="form-label">Contraseña:</label><br>
-                                    <br> <input type="password" id="contrasena" class="form-control" required>
-                                </div><br>
-                                <button type="submit" class="boton1" onclick="mostrarMensaje()">Iniciar
-                                    sesión</button><br>
-
-                        </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-    </section>
-    <br>
+    
+<section class="reseñahistorica">
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="text-center">
-                    <h2> NUESTRAS INSTALACIONES</h2><br>
-                    <iframe width="560" height="300" src="https://www.youtube.com/embed/FEdeiV8vK70"
-                        title="YouTube video player" frameborder="20"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+            <div class="col-12 col-md-7 mb-4">
+        <div class="ventajas">
+           <h2> 🌟 Ventajas </h2>
+            <ul>✅ Acceso personalizado a recursos educativos</ul>
+            <ul>✅ Participa en eventos exclusivos para miembros</ul>
+            <ul>✅ Conexión con una red de +20,000 egresados exitosos</ul>
+           <ul> ✅ Recibe actualizaciones y noticias relevantes</ul>
+           <ul> ✅ Explora todos los programas académicos disponibles</ul>
+            
+        </div>
+            </div>
+            <div id="res" class="col-12 col-md-4">
+                <h2><strong> INGRESO DE USUARIOS</strong></h2>
+                <div id="inicio-sesion" class="card bg-transparent">
+                    <div class="card-body">
+                        <form>
+                            <div class="md-4 mb-4">
+                                <div class="input-group mb-4">
+                                    <label class="input-group-text" for="inputGroupSelect01">Seleccione</label>
+                                    <select class="form-select" id="inputGroupSelect01">
+                                        <option selected>tipo de usuario</option>
+                                        <option value="1">Familias</option>
+                                        <option value="2">Educadores</option>
+                                    </select>
+                                </div>
+                                <label  class="usuario">
+                                <i class="bi bi-person"></i>
+                                <input placeholder="ingrese su usuario" type="text" id=" usuario" class="input">
+                                </label>
+                            </div>
+                            <div class="md-4 mb-4">
+                                <label class="usuario" >
+                                <span class="bi bi-lock"></span>
+                                <input placeholder=" ingrese su contraseña" type="password" id="contrasena" class="input">
+                                </label>
+                            </div>
+                            <button type="submit" class="boton1" onclick="mostrarMensaje()">Iniciar sesión</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<br>
+    <div class="instalaciones1">
+        <h2>NUESTRAS INSTALACIONES</h2>
+    </div>
+    <div class="n-instalaciones">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/FEdeiV8vK70" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+            
+                    <p class="instalaciones">Bienvenidos a nuestro recorrido virtual por las instalaciones del colegio Lancaster. En
+                        este video, te llevaremos a través de un viaje por nuestro campus para que puedas conocer de cerca todo lo
+                        que ofrecemos a nuestros estudiantes y comunidad.</p>
+                </div>
+               
+            </div>
+            </div>
     <div class="floating-button">
         <button id="mainButton" aria-label="Botón flotante">
             <i class="bi bi-universal-access" style="font-size: 30px;"></i>
