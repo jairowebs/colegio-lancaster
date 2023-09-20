@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="nosotros.css">
 </head>
 
 <body>
@@ -42,9 +43,30 @@
                         <a class="nav-link " aria-current="page" href="nosotros.html">nosotros</a>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="contacto.html">contacto</a>
-            </div>
+            <link rel="stylesheet" href="nosotros.css">
+                    </div>
+
         </div>
     </nav>
+    </div>
+    <div id="chatbot">
+        <div id="chatbot-icon" onclick="toggleChatbot()">
+            <img src="imagenes/chat-3d.png" width="130px" alt="Icono del chatbot">
+        </div>
+        <div id="chatbot-window">
+            <div id="chatbot-header">
+                <h3>chatbot</h3>
+                <button onclick="toggleChatbot()">Cerrar</button>
+            </div>
+            <div id="chatbot-body">
+                <div id="chatbot-messages"></div>
+                <div id="chatbot-input">
+                    <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
             <h2><strong> RESEÑA HISTORICA</strong> </h2>
             <p>
                 El Colegio Lancaster es una institución educativa con una rica historia que ha dejado una marca
@@ -67,51 +89,8 @@
 
     <footer>
 
-    <div class="logo-container">
-        <img class="logo-container" src="imagenes/icono.png" width="160px" alt="Logo">
-    </div>
-    <div class="parrafofooter">
-        <p>"Construyendo conocimiento, forjando el futuro"</p>
-    </div>
-    <p class="text-center ">¡Síguenos en nuestras redes sociales y únete a nuestra comunidad educativa en línea!"
-    </p>
-    <div class="row ">
-        <div class=" col-12 d-flex justify-content-center">
-            <a href=""><i class="bi bi-whatsapp"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-envelope-at-fill"></i></a>
-        </div>
-    </div>
-    <div class="text-center text-white-50">
-        <h5 id="mapa-titulo">Mapa de Sitio</h5>
-        <ul class="sitemap">
-            <li><a href="index.html">Inicio</a>
-                <ul>
-                    <li>reseña historica</li>
-                    <li>incio de sesion</li>
-                    <li>categorias</li>
-                </ul>
-            </li>
-            <li><a href="servicios.html">Servicios</a>
-                <ul>
-                    <li>preescolar</li>
-                    <li>primaria</li>
-                    <li>segundaria</li>
-                    <li>map del colegio</li>
-                </ul>
-            </li>
-            <li><a href="contacto.html">Contacto</a>
-                <ul>
-                    <li>formulario</li>
-                    <li>correo</li>
-                    <li>redes sociales</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="derechos-autor">
-        <p>creado por grupo codelogi (2023) &#169;</p>
-    </div>
+
+    
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

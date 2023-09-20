@@ -1,7 +1,8 @@
 
 .navbar {
-   padding: -5rem;
+   
     background-color: transparent;
+     /* estilo de navbar */
 }
 
 
@@ -9,78 +10,129 @@
     align-items: center;
     justify-content: space-between;
     color: #6D7358; 
-    font-weight: bold;
+    font-weight: bold ;
+     /* estilo de navbar */
 }
 
-
-
-.logo-colegio img {
-    color: white;
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
-    /* Agrega una sombra */
-    transition: transform 0.3s ease-in-out;
-    /* Agrega una transición suave */
+.imajen{
+    width: 150px;
+    border-radius: 3%;
+    padding-left: 20%;
+    /* fin de navbar */
 }
 
-.logo-colegio img:hover {
-    transform: translateY(-9px);
-    /* Eleva la imagen 5px hacia arriba */
-}
-.logo-colegio {
-    background: linear-gradient(to right, #F2F2F2,#6d735877);
-    padding: 200px 15px 55px 50px;
-    margin: 2px;
-    display: flex;
-    align-items: center;
+/* estilo de secion hero */
+.hero {
+  font-family: 'Cinzel', serif;
+  font-family: 'Lobster', cursive;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  background: linear-gradient(to right, #f2f2f27e, #D0CAF8, #D0CAF8);
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2b2b400e;
+  box-shadow: 0 10px 14px #2b2b407a;
+  text-align: center;
+  padding: 2px;
 }
 
-.logo-content {
-    margin-right: 20px;
+.logo-col {
+    width: 200px;
+  text-align: center;
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen al contenedor */
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.308);
+  box-shadow: 0 10px 14px #2B2B40;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
 }
+
+.logo-col:hover {
+  transform: translateY(-9px);
+}
+
+.manos-grado {
+  max-width: 100%;
+  height: auto;
+  
+}
+
 
 .text-content {
-    display: flex;
-    flex-direction: column;
 
+justify-content: center;
+     display: flex;
+    flex-direction: column;
+    
+   /* estilo de texto */
 }
 
 .text-content h3 {
-    color: #6D7358;
    
-    margin: 0;
+   
+    color: #2B2B40;
+   
+}/* estilo de texto */
+
+#titulo1 {
+    /* estilo de texto animacion */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid#FDC734;
+  animation: borrarEscribir 8s steps(40) infinite;
 }
+
+@keyframes borrarEscribir {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+ /* estilo de texto animacion fin */
+
+
 
 .lista{
     display: flex;
     text-align: center;
-    margin: 20px;
+    margin: 2px;
     padding: 30px;
-    color: #6D7358;
+    color: #2B2B40;
     justify-content: space-between ;
     align-items: center;
     
 }
 .text-content i{
-    font-size: 20px;
-    color: #5E7314;
+    font-size: 28px;
+    color: #FDC734;
 
 }
-
-.ventajas ul{
-    justify-content: center;
-    padding: 20px 40px;
-    margin: 10px;
+.manos-grado{
+    display: flex;
+      flex-direction: column;
+   padding: 50px 0px 0px 0px ;
+    width: 250px; ;
+    margin-inline: 1.5rem;
+   /* fin secion hero */
 }
+
+
+
 body {
-    
+     /* estilo body */
     background-size: auto;
     margin-left: 20px;
     margin-right: 20px;
 }
-
+ /* estilo de carrusel*/
 .carousel-inner {
     padding: 1.2rem;
     display: flex;
@@ -88,75 +140,92 @@ body {
     height: auto;
 
 }
-#titulo{
-    font-family: 'Cinzel', serif;
-        font-family: 'Lobster', cursive;
-        font-family: 'Orbitron', sans-serif;
-        font-family: 'Rajdhani', sans-serif;
 
-        }
 h2{
-    color: #6D7358;
+    color: #2B2B40;
 font-family: 'Cinzel', serif;
     font-family: 'Lobster', cursive;
     font-family: 'Orbitron', sans-serif;
     font-family: 'Rajdhani', sans-serif;
 }
 h5{
-    color: #6D7358;
+    color: #2B2B40;
     font-family: 'Cinzel', serif;
         font-family: 'Lobster', cursive;
         font-family: 'Orbitron', sans-serif;
         font-family: 'Rajdhani', sans-serif;
 }
 p{
-    color: #6D7358;
+    color: black;
     font-family: 'Cinzel', serif;
         font-family: 'Lobster', cursive;
         font-family: 'Orbitron', sans-serif;
         font-family: 'Rajdhani', sans-serif;
 }
-        
+ .ventajas ul{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+    justify-content: center;
+    padding: 20px 40px;
+    margin: 10px;
+    justify-content: space-between;
+     /* estilo de texto hero fin */}       
 
-
+/* inicio de secion */
 .reseñahistorica {
-    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+     background-image: url(imagenes/kerfin7_nea_2735.jpg) ;
+     background-repeat: no-repeat;
+     background-size:cover;
+
+    box-shadow: 0 10px 14px rgb(0, 0, 0);
     border-radius: 20px;
-    border: 1.5px solid rgba(0, 0, 0, 0.267);
+    border: 1px solid rgba(0, 0, 0, 0.082);
     padding: 50px;
     margin: 10px 40px;
 }
 
 #inicio-sesion{
+    /* inicio de secion */
     padding: 20px;
-    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
-    border-radius: 20px;border: 1.5px solid rgba(0, 0, 0, 0.267);
+    box-shadow: 0 10px 14px rgb(0, 0, 0);
+    border-radius: 20px;border: 1.5px solid rgb(0, 0, 0);
     }
 
 .bi {
-    
+    /* inicio de secion */
     font-size: 30px;
     
 
 }
-
+/* inicio de secion */
 .usuario{
     padding: 10px;
     margin: 5px;
 }
-
+/* inicio de secion */
 .input{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
     padding: 0px 10px;
     margin: 0px;
     outline: none;
     border: none;
     color: black;
     border-bottom:solid 1px black;
+     background-color: transparent;
 }
     
 
-
+/* inicio de secion */
 .boton1{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
         color:black;
         background-color: white;
         border: 1.5px solid rgba(0, 0, 0, 0.479);
@@ -170,32 +239,70 @@ p{
 .boton1:hover{
     background-color:rgb(103, 88, 240);
 }
-.video{
-    width: 450px;
-    padding: 10px;
-    margin: 20px;
+
+/* fin de secion */
+
+
+/* estilo de nuestras instalaciones inicio */
+
+.youtobe-card{
+    font-family: 'Cinzel', serif;
+        font-family: 'Lobster', cursive;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Rajdhani', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+ border:1px solid black; 
+box-shadow: 0 5px 7px rgb(0, 0, 0);
+border-radius: 10px;
+
+
+}
+
+
+.video-you iframe{
+   width:500px;
+   height: 300px;
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+.titulo-h3{
+
+margin: 1rem 0 1rem;
+
+
+}
+
+.fecha{
+
+display: block;
+margin: .5rem 0 1rem;
+}
+
+.descripcion{
+    margin: 30px;
+    text-align: justify;
+    
 }
 .instalaciones1{
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
-    border: 1.5px solid rgba(0, 0, 0, 0.082);
+    display: flex;
     justify-content: center;
     text-align: center;
-    padding: 4px ;
-    margin: 3px 3px;
-    background: linear-gradient(to right, #F2F2F2, #6d735877);
+    padding: 20px;
+    
+   
 }
 
-.n-instalaciones{
-    padding: 30px;
-    margin: 10px;
-    justify-content: center;
 
 
-}
-.instalaciones{
-    padding: 10px;
-        margin: 20px;
-}
+/* estilo de nuestras instalaciones fin */
 
 .NUESTROS-PROGRAMAS{
     text-align: center;
