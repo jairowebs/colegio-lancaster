@@ -83,22 +83,24 @@
 
 
     </section>
-    <div class="floating-button">
-        <button id="mainButton" aria-label="Botón flotante">
-            <i class="bi bi-universal-access" style="font-size: 30px;"></i>
-        </button>
-        <div id="dropdown" class="dropdown">
-            <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
-                    style="font-size: 20px;"></i></button>
-            <p>nocturno</p>
-            <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
-                    style="font-size: 20px;"></i></button>
-            <p>fuente</p>
-            <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
-                    style="font-size: 20px;"></i></button>
-            <p>voz</p>
-        </div>
+<div class="floating-button">
+    <a id="mainButton" aria-label="Botón flotante">
+        <img src="imagenes/boton-acceso.png" width="70px" alt="">
+    </a>
+    <div id="dropdown" class="dropdown">
+        <a id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><img
+                src="imagenes/icon-nocturno.png" width="70px" alt="">
+        </a>
+        <p>nocturno</p>
+        <a id="duplicarButton" onclick="duplicarTamano()" class="subButton"><img src="imagenes/icon-fuente.png"
+                width="70px" alt="">
+        </a>
+        <p>fuente</p>
+        <a onclick="toggleLecturaPagina()" class=" subButton"><img src="imagenes/icon-voz.png" width="70px" alt="">
+        </a>
+        <p>voz</p>
     </div>
+</div>
             <div class="HB">
                 <div class="HABLEMOS ">
                     HABLEMOS
