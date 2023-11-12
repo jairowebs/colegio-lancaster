@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap"/>
+    <link rel="stylesheet" href="/sass/style.css">
+
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+    <!-- Menu navegacion -->
+    <nav>
+      <div class="header-1-parent">
+          <div class="header-1">
+            <a href="/pages/Login/login.html">
+            <div class="right-nav">
+              <button class="button">
+                <div class="login">Ingresa a la APP</div>
+              </button>
+            </div>
+            </a>
+
+            <div class="left-nav">
+              <a href="/pages/Index/index.html">
+                <img class="logotype-dark" alt="" src="/assets/img/LOGOCODELOGY.png" />
+              </a>
+              <div class="nav-items">
+                <a class="enlaces" href="/pages/Index/index.html">
+                  <div class="header-menu-default">
+                    <div class="label">Inicio</div>
+                  </div>
+                </a>
+               
+                <a class="enlaces" href="/pages/Servicios/servicios.html">
+                  <div class="header-menu-default">
+                    <div class="label">Servicios</div>
+                  </div>
+                </a>
+
+                
+                <div class="header-menu-default">
+                  <a class="enlaces" href="/pages/Contacto/contacto.html">Contacto</a>
+                    <!-- <div class="label"></div> -->
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </nav>
+<!-- FIN Menu navegacion -->
+
+<!--FORMULARIO  -->
+<div class="login-screen">
+  <div class="background">
+    <img class="login-image-icon" alt="loginImage" src="/assets/img/login-image@2x.png"/>
+    <img class="vector-icon" alt="" src="/assets/img/vector.svg" />
+  </div>
+
+  <div class="right-background-icon"> </div>
+
+<!-- INICIO INPUTS -->
+  <form class="right-frame" action="#" method="post">
+
+    <div class="eamil-id">
+      <ul>
+        <li>
+          <label for="email" class="email-id">Email</label>
+          <input placeholder="ejemplo@lancaster.com" class="eamil-id-child" type="email"  autofocus required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" />
+          <img class="mail-icon" alt="emailIcon" src="/assets/img/mail-icon.svg" />
+        </li>
+    </div>
+
+    <div class="password">
+      <li>
+        <label for="password" class="email-id">Contraseña</label>
+        <input placeholder="Ingresa tu Contraseña" class="eamil-id-child" type="password" maxlength="16" required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" />
+        <div class="lock"></div>
+        <img class="frame-icon" alt="frame" src="/assets/img/frame.svg" />
+      </li>
+    </ul>
+
+      <div class="infoprovistechnologiescom"></div>
+    </div>
+
+    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+
+    
+      <button type="submit" class="login-now" >
+        Iniciar Sesión
+      </button>
+    
+    <!-- <div class="or">
+      <div class="or-child"></div>
+      <div class="or-item"></div>
+      <div class="or1">OR</div>
+    </div>
+    <button class="sign-up">
+      <div class="sign-up-child"></div>
+      <div class="signup-now">Signup now</div>
+    </button> -->
+    <div class="login-into-your">Bienvenido!</div>
+    <img class="dummy-logo-icon" alt="" src="/assets/img/LOGOCODELOGY.png" />
+  </form>
+  <img class="vector-icon1" alt="" src="/assets/img/vector1.svg" />
+
+  <img class="vector-icon2" alt="" src="/assets/img/vector2.svg" />
+</div>
+
+  <!-- BOTON ACCESIBILIDAD -->
+  <div class="floating-button">
+    <button id="mainButton" aria-label="Botón flotante">
+        <i class="bi bi-universal-access" style="font-size: 30px;"></i>
+    </button>
+    <div id="dropdown" class="dropdown">
+        <button id="modoNocturnoButton" onclick="activarModoNocturno()" class="subButton"><i class="fas fa-moon"
+                style="font-size: 20px;"></i></button>
+        <p>nocturno</p>
+        <button id="duplicarButton" onclick="duplicarTamano()" class="subButton"><i class="fas fa-text-height"
+                style="font-size: 20px;"></i></button>
+        <p>fuente</p>
+        <button onclick="toggleLecturaPagina()" class="subButton"><i class="fas fa-microphone"
+                style="font-size: 20px;"></i></button>
+        <p>voz</p>
+    </div>
+</div>
+<!-- BOTON ACCESIBILIDAD -->
+
+
+        <!-- INICIO FOOTER -->
+        <footer>
+          <div class="footer-big-1-parent">
+              <div class="footer-big-1">
+                <div class="big-footer">
+                  <div class="col-1">
+                    <div class="company">CodeLogy</div>
+                    <div class="list-items">
+  
+                      <div class="about-us">
+                        <a class="enlacesFooter" href="/pages/Index/index.html">Inicio</a></div>
+  
+                      <div class="about-us">
+                        <a class="enlacesFooter" href="/pages/Servicios/servicios.html">Servicios</a> </div>
+  
+                      <div class="about-us">
+                        <a class="enlacesFooter" href="/Paginas/Contacto/contacto.html">Contactanos</a> </div>
+  
+                      <div class="about-us">Acerca de Nosotros</div>
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div class="company">
+                      <a class="enlacesFooter" href=""> Mapa del sitio</a></div>
+                    <!-- <div class="list-items">
+                      <div class="about-us">Help Center</div>
+                      <div class="about-us">Safety Center</div>
+                      <div class="about-us">Community Guidelines</div>
+                    </div> -->
+                  </div>
+                  <div class="col-3">
+                    <div class="company">Legal</div>
+                    <div class="list-items">
+                      <div class="about-us">Politica de privacidad</div>
+                      <div class="about-us">Terms of Service</div>  
+                    </div>
+                  </div>
+                  <div class="col-1">
+                    <div class="install-app">Descarga la APP</div>
+                    <div class="badges">
+                      <img
+                        class="download-badge-google-play-b"
+                        alt=""
+                        src="/assets/img/download-badge--google-play-badge.svg"
+                      />
+        
+                      <img
+                        class="download-badge-google-play-b"
+                        alt=""
+                        src="/assets/img/download-badge--app-store-badge.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <img class="divider-icon" alt="" src="/assets/img/divider.svg" />
+        
+                <div class="small-footer">
+                  <div class="landify-ui-kit">
+                    © 2023 Codelogy All rights reserved
+                  </div>
+                  <div class="social-links">
+                    <div class="social-icons">
+                      <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img
+                        class="social-icons1"
+                        alt="perfil-instagram"
+                        src="/assets/img/social-icons.svg"/>
+                      </a>
+                      
+                      <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                        <img
+                        class="social-icons1"
+                        alt="perfiltwitter"
+                        src="/assets/img/social-icons2.svg"
+                      />
+                      </a>
+                   
+                      <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img
+                        class="social-icons1"
+                        alt="youtube"
+                        src="/assets/img/social-icons3.svg"
+                      />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </footer>
+      <!-- FIN FOOTER -->
+</body>
+</main>
+</html>
