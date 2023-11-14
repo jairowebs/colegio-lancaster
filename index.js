@@ -52,3 +52,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
     sitemap.classList.toggle('show');
   });
 });
+
+
+function toggleChatbot() {
+  var chatbotWindow = document.getElementById('chatbot-window');
+  chatbotWindow.style.display = (chatbotWindow.style.display === 'none' || chatbotWindow.style.display === '') ? 'block' : 'none';
+}
+
+function sendMessage() {
+  var userInput = document.getElementById('user-input').value;
+  displayMessage(userInput, 'user');
+  setTimeout(function() {
+    displayMessage("En unos minutos nos pondremos en contacto contigo.", 'bot');
+  }, 2000);
+}
+
+function displayMessage(message, sender) {
+  var chatbotMessages = document.getElementById('chatbot-messages');
+  var messageElement = document.createElement('div');
+  messageElement.classList.add('message', sender);
+  messageElement.innerText = message;
+  chatbotMessages.appendChild(messageElement);
+}
+
